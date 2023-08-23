@@ -1,6 +1,6 @@
 rightwrist = 0;
 leftwrist = 0;
-difference = 0;
+difference = 160;
 function setup(){
     video = createCapture(VIDEO);
     video.size(550,500);
@@ -13,12 +13,11 @@ function modelLoaded(){
     console.log("model loaded");
 }
 function draw(){
-    background("grey");
-    textsize(difference); 
-    fill(25,0,0);
-    text("Tanishka",50,400);
+    background("white");
+    textSize(difference); 
+    fill(255,0,0);
+    text("Tanishka",100,100);
 }
-
 function gotposes(result){
     if (result.length > 0){
         console.log(result);
